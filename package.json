@@ -1,0 +1,28 @@
+{
+  "description": "Simple and fast microservice - http REST server for node.js",
+  "keywords": [
+    "microservice",
+    "rest",
+    "http",
+    "node"
+  ],
+  "author": {
+    "name": "OPT SYSTEMS",
+    "email": "info@opt.si",
+    "web": "https://opt.systems"
+  },
+  "contributors": [
+    {
+      "name": "Dominik Bozic",
+      "web": "http://twitter.com/handu"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opt-systems/optimus-micro-node"
+  },
+  "dependencies": {},
+  "version": "1.0.0",
+  "name": "optimus-micro-node",
+  "license": "MIT"
+}
