@@ -4,7 +4,7 @@ import { IncomingMessage, ServerResponse } from 'http';
 
 interface UsrDefinedObj { [fieldName: string]: any } 
 
-declare function optimusMicro(): UsrDefinedObj;
+declare function optimusMicro(...args: any): any;
 
 declare namespace optimusMicro {
   interface Request extends IncomingMessage {
@@ -12,7 +12,7 @@ declare namespace optimusMicro {
     params: UsrDefinedObj
   }
   interface Response extends ServerResponse {
-    send(content: string): UsrDefinedObj;
+    send(content: string): void;
   }
 }
 
