@@ -1,16 +1,18 @@
-/// <reference types="node" />
+// <reference types="node" />
 
 import { IncomingMessage, ServerResponse } from 'http';
 
-declare function optimusMicro(): any;
+interface UsrDefinedObj { [fieldName: string]: any } 
+
+declare function optimusMicro(): UsrDefinedObj;
 
 declare namespace optimusMicro {
   interface Request extends IncomingMessage {
     body: string,
-    params: any
+    params: UsrDefinedObj
   }
   interface Response extends ServerResponse {
-    send(content: string): any;
+    send(content: string): UsrDefinedObj;
   }
 }
 
