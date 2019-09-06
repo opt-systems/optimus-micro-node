@@ -8,7 +8,7 @@ declare function optimusMicro(...args: any): any;
 
 declare namespace optimusMicro {
   interface Request extends IncomingMessage {
-    body: string,
+    body: UsrDefinedObj,
     params: UsrDefinedObj
   }
   interface Response extends ServerResponse {
